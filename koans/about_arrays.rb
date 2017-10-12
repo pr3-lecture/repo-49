@@ -28,7 +28,7 @@ class AboutArrays < Neo::Koan
     assert_equal :peanut, array.first
     assert_equal :jelly, array[3]
     assert_equal :jelly, array.last
-    assert_equal __, array[-1]
+    assert_equal :jelly, array[-1]
     assert_equal __, array[-3]
   end
 
