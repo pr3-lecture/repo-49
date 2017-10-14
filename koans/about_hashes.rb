@@ -23,7 +23,7 @@ class AboutHashes < Neo::Koan
   def test_accessing_hashes_with_fetch
     hash = { :one => "uno" }
     assert_equal "uno", hash.fetch(:one)
-    assert_raise(___) do
+    assert_raise(:doesnt_exist) do
       hash.fetch(:doesnt_exist)
     end
 
