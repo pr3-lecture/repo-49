@@ -36,7 +36,7 @@ class AboutArrays < Neo::Koan
     array = [:peanut, :butter, :and, :jelly]
 
     assert_equal [:peanut], array[0,1]
-    assert_equal __, array[0,2]
+    assert_equal [:peanut, :butter], array[0,2]
     assert_equal __, array[2,2]
     assert_equal __, array[2,20]
     assert_equal __, array[4,0]
